@@ -12,7 +12,7 @@ import { HomeComponent } from './home/home.component';
       <header class="brand-name">
         <img
           class="brand-logo"
-          src="images/logo.svg"
+          src="/images/logo.svg"
           alt="logo"
           aria-hidden="true"
         />

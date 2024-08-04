@@ -18,12 +18,10 @@ import { HomeComponent } from './home/home.component';
         />
       </header>
       <section class="content">
-        <app-home></app-home>
+        <router-outlet></router-outlet>
       </section>
     </main>
   `,
   styleUrl: './app.component.css',
 })
-export class AppComponent {
-  title = 'Meet your home';
-}
+export class AppComponent {}

@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
 
-import { RouterModule } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { HousingLocation } from '../housing-location';
 
 @Component({
   selector: 'app-housing-location',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterLink],
   // templateUrl: './housing-location.component.html',
   template: `
     <section class="listing">

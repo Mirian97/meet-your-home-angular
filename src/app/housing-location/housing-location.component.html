@@ -1,10 +1,11 @@
 <section class="listing" [routerLink]="['/details', housingLocation.id]">
-  <img
-    class="listing-photo"
-    [src]="housingLocation.photo"
-    alt="Exterior photo of {{ housingLocation.name }}"
-    crossorigin
-  />
+  <div class="listing-photo">
+    <img
+      [src]="housingLocation.photo"
+      alt="Exterior photo of {{ housingLocation.name }}"
+      crossorigin
+    />
+  </div>
   <h2 class="listing-heading">{{ housingLocation.name }}</h2>
   <p class="listing-location">
     <img alt="Location pin" src="/images/location-pin.svg" />

@@ -1,27 +1,45 @@
-# LearningAngular
+# Meet your Home
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+## Descrição
 
-## Development server
+Uma aplicação web simples desenvolvida em Angular para auxiliar na busca de imóveis. O usuário pode filtrar os resultados por cidade e visualizar informações básicas sobre cada propriedade.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<img src="public/images/screenshot.png" alt="Home page" >
 
-## Code scaffolding
+## Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Busca por Cidade: Permite filtrar os resultados de acordo com a cidade desejada.
+- Detalhes do Imóvel: Exibe informações como nome do imóvel e cidade.
+- Botão "See More": Possibilidade de obter mais detalhes sobre cada imóvel.
 
-## Build
+## Tecnologias Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular**: Framework front-end para desenvolvimento web.
+- **TypeScript**: Linguagem de tipagem estática para JavaScript.
+- **HTML**: Estruturação das páginas.
+- **CSS**: Estilização da interface.
 
-## Running unit tests
+## Rodar projeto localmente
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Node.js e npm (ou yarn): Para gerenciar as dependências do projeto.Para editor de código, recomenda-se o Visual Studio Code.
 
-## Running end-to-end tests
+Clone o repositório:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+git clone https://es.wiktionary.org/wiki/removido
+```
 
-## Further help
+Instale as dependências:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```
+cd meet-your-home-angular
+npm install
+```
+
+Inicie o servidor de desenvolvimento:
+
+```
+ng serve
+```
+
+Acesse http://localhost:4200/

@@ -1,12 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { HousingLocation } from '../housing-location';
+import { HousingService } from '../housing.service';
 
 @Component({
   selector: 'app-details',
   standalone: true,
   imports: [],
   templateUrl: './details.component.html',
-  styleUrl: './details.component.css'
+  styleUrl: './details.component.css',
 })
 export class DetailsComponent {
+  route: ActivatedRoute = inject(ActivatedRoute);
+  housingLocation: HousingLocation | undefined;
+  housingService = inject(HousingService);
 
+  constructor() {
+    const housingLocationId = Number(this.route.snapshot.params['id']);
+    this.housingLocation =
+      this.housingService.getHousingLocationById(housingLocationId);
+  }
 }

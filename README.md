@@ -26,7 +26,7 @@ Node.js e npm (ou yarn): Para gerenciar as dependências do projeto.Para editor 
 Clone o repositório:
 
 ```
-git clone https://es.wiktionary.org/wiki/removido
+git clone https://github.com/Mirian97/meet-your-home-angular.git
 ```
 
 Instale as dependências:
